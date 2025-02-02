@@ -1,5 +1,5 @@
 import React from 'react'
-import {Game, Player, Profile} from '../types/Types';
+import { Game, Profile } from '../types/Types';
 import PlayerData from './PlayerData';
 import TrophySvg from './TrophySvg';
 import {formatNumber} from '../misc/Utils';

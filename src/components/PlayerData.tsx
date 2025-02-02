@@ -1,5 +1,5 @@
 import React from 'react'
-import { Player, PlayerDataType, Profile } from '../types/Types';
+import { PlayerDataType, Profile } from '../types/Types';
 import RandomDiceSvg from './RandomDiceSvg';
 import {capitalize} from '../misc/Utils';
 
@@ -18,6 +18,7 @@ const PlayerData = ({
 	details,
 	users
 }: PlayerDataProps) => {
+
 	const currentUser = users?.filter(
 		(playerFromPlayers) => playerFromPlayers?.profile_id === player.profile_id
 	)[0];
