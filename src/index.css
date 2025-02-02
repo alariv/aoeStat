@@ -1,0 +1,172 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  /* display: flex; */
+  /* place-items: center; */
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.latestGameTitle {
+  color: rgb(117,210,81);
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 20px 40px 0;
+}
+.ongoingGameTitle {
+  color: rgb(255,120,120);
+  background-color: #1b1b1b;
+  margin: 0;
+  padding: 20px 40px 0;
+}
+.latestGame{
+  position: sticky;
+  top: 0;
+  background-color: #1b1b1b;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.previousGames .gameDataContainer {
+    display: flex;
+}
+
+.VIP, .VIP * {
+  color: #b45d40 !important
+}
+
+.gameDate {
+  margin: 0;
+  position: relative;
+  top: 40px;
+  left: 100px;
+}
+.flag{
+  width: 47px;
+  height: 26px;
+  background-size: 190px;
+}
+.flag.FRENCH{
+  background: url(/src/assets/flagsGrid.webp) -95px -27px;
+  background-size: 190px;
+}
+.flag.ORDER_OF_THE_DRAGON{
+  background: url(/src/assets/flagsGrid.webp) 0 -80px;
+  background-size: 190px;
+}
+.flag.MONGOLS{
+  background: url(/src/assets/flagsGrid.webp) -143px -54px;
+  background-size: 190px;
+  background-size: 190px;
+}
+.flag.OTTOMANS{
+  background: url(/src/assets/flagsGrid.webp) -48px -80px;
+  background-size: 190px;
+  background-size: 190px;
+}
+.flag.ENGLISH{
+  background: url(/src/assets/flagsGrid.webp) -48px -27px;
+  background-size: 190px;
+}
+.flag.RUS{
+  background: url(/src/assets/flagsGrid.webp) -95px -80px;
+  background-size: 190px;
+}
+.flag.BYZANTINES{
+  background: url(/src/assets/flagsGrid.webp) -95px 0;
+  background-size: 190px;
+}
+.flag.JAPANESE{
+  background: url(/src/assets/flagsGrid.webp) 0 -54px;
+  background-size: 190px;
+}
+.flag.DELHI_SULTANATE{
+  background: url(/src/assets/flagsGrid.webp) 0 -27px;
+  background-size: 190px;
+}
+.flag.HOLY_ROMAN_EMPIRE{
+  background: url(/src/assets/flagsGrid.webp) -143px -27px;
+  background-size: 190px;
+}
+.flag.ABBASID_DYNASTY{
+  background: url(/src/assets/flagsGrid.webp) 0 0;
+  background-size: 190px;
+}
+.flag.CHINESE{
+  background: url(/src/assets/flagsGrid.webp) -143px 0;
+  background-size: 190px;
+}
+.flag.MALIANS{
+  background: url(/src/assets/flagsGrid.webp) -95px -54px;
+  background-size: 190px;
+}
+.flag.AYYUBIDS{
+  background: url(/src/assets/flagsGrid.webp) -48px 0;
+  background-size: 190px;
+}
+.flag.ZHU_XIS_LEGACY{
+  background: url(/src/assets/flagsGrid.webp) -143px -80px;
+  background-size: 190px;
+}
