@@ -1,8 +1,7 @@
-import React from 'react'
 import { Game, Profile } from '../types/Types';
 import PlayerData from './PlayerData';
 import TrophySvg from './TrophySvg';
-import {formatNumber} from '../misc/Utils';
+import { formatNumber } from '../misc/Utils';
 
 type TeamContainerProps = {
 	game: Game;
@@ -30,9 +29,11 @@ const TeamContainer = ({
 						year: 'numeric',
 						month: '2-digit',
 						day: '2-digit'
-					})} ${formatNumber(new Date(game?.started_at).getHours())}:${formatNumber(new Date(
-						game?.started_at
-					).getMinutes())} (${game?.map}) - ${Math.floor(game?.duration / 60)}min`
+					})} ${formatNumber(
+						new Date(game?.started_at).getHours()
+					)}:${formatNumber(new Date(game?.started_at).getMinutes())} (${
+						game?.map
+					}) - ${Math.floor(game?.duration / 60)}min`
 				)}
 			</legend>
 
@@ -49,6 +50,5 @@ const TeamContainer = ({
 		</fieldset>
 	);
 };
-
 
 export default TeamContainer;

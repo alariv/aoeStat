@@ -1,7 +1,6 @@
-import React from 'react'
 import { PlayerDataType, Profile } from '../types/Types';
 import RandomDiceSvg from './RandomDiceSvg';
-import {capitalize} from '../misc/Utils';
+import { capitalize } from '../misc/Utils';
 
 type PlayerDataProps = {
 	player: PlayerDataType;
@@ -18,7 +17,6 @@ const PlayerData = ({
 	details,
 	users
 }: PlayerDataProps) => {
-
 	const currentUser = users?.filter(
 		(playerFromPlayers) => playerFromPlayers?.profile_id === player.profile_id
 	)[0];
@@ -87,10 +85,15 @@ const PlayerData = ({
 						<span>Rank: </span>
 						<strong>
 							{`${
-								capitalize(currentUser?.modes['rm_solo']?.rank_level.replace(/_/g, ' ')) ||
-								'-'
+								capitalize(
+									currentUser?.modes['rm_solo']?.rank_level.replace(/_/g, ' ')
+								) || '-'
 							} / 
-							${capitalize(currentUser?.modes['rm_team']?.rank_level.replace(/_/g, ' ')) || '-'}`}
+							${
+								capitalize(
+									currentUser?.modes['rm_team']?.rank_level.replace(/_/g, ' ')
+								) || '-'
+							}`}
 						</strong>
 					</div>
 				</div>
@@ -99,4 +102,4 @@ const PlayerData = ({
 	);
 };
 
-export default PlayerData
+export default PlayerData;

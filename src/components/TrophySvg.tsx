@@ -1,8 +1,6 @@
-import React from 'react'
-
 type TrophySvgProps = {
-size?: number
-}
+	size?: number;
+};
 
 const TrophySvg = ({ size }: TrophySvgProps) => (
 	<svg
@@ -12,7 +10,7 @@ const TrophySvg = ({ size }: TrophySvgProps) => (
 		id='Layer_1'
 		version='1.1'
 		xmlns='http://www.w3.org/2000/svg'
-		    fill="#ffd62d"
+		fill='#ffd62d'
 	>
 		{/* <style type="text/css">
 			.st0{fill:#FFC54D}
@@ -24,6 +22,4 @@ const TrophySvg = ({ size }: TrophySvgProps) => (
 	</svg>
 );
 
-
-
-export default TrophySvg
+export default TrophySvg;

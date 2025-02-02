@@ -95,13 +95,13 @@ export type Profile = {
 	country: string;
 	social: null;
 	modes: {
-		[rm_solo: string]: Mode;
-		[rm_team: string]: Mode;
-		[rm_2v2_elo: string]: Mode;
-		[rm_3v3_elo: string]: Mode;
-		[rm_4v4_elo: string]: Mode;
-		[qm_2v2: string]: Mode;
-		[qm_3v3: string]: Mode;
-		[qm_4v4: string]: Mode;
+		rm_solo: Mode;
+		rm_team: Mode;
+		rm_2v2_elo: Mode;
+		rm_3v3_elo: Mode;
+		rm_4v4_elo: Mode;
+		qm_2v2: Mode;
+		qm_3v3: Mode;
+		qm_4v4: Mode;
 	};
 };
