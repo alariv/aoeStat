@@ -170,3 +170,7 @@ button:focus-visible {
   background: url(/src/assets/flagsGrid.webp) -143px -80px;
   background-size: 190px;
 }
+.flag.JEANNE_DARC{
+  background: url(/src/assets/flagsGrid.webp) -48px -54px;
+  background-size: 190px;
+}
